@@ -1,0 +1,39 @@
+{
+  "variables": {
+    "adminEmail": "admin@example.com",
+    "password": "password",
+    "apiKey": "33052c8a-c283-4e96-9d2a-eb1215c69f8f-not-for-prod",
+    "defaultTenantId": "d7d09513-a3f5-401c-9685-34ab6c552453",
+    "defaultApplicationId": "e9fdb985-9173-4e01-9d73-ac2d60d1dc8e"
+  },
+  "apiKeys": [
+    {
+      "key": "#{apiKey}",
+      "description": "Standard development API key"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "/api/user/registration/00000000-0000-0000-0000-000000000001",
+      "body": {
+        "user": {
+          "birthDate": "1999-01-01",
+          "email": "#{adminEmail}",
+          "firstName": "Admin",
+          "lastName": "Admin",
+          "password": "#{password}",
+          "data": {
+            "Company": "Example"
+          }
+        },
+        "registration": {
+          "applicationId": "#{defaultApplicationId}",
+          "roles": [
+            "admin"
+          ]
+        }
+      }
+    }
+  ]
+}
