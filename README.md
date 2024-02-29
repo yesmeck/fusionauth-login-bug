@@ -11,10 +11,10 @@ Only the first user can login successfully, the subsequent users will get an err
 
 ```json
 {
-  applicationId: [
+  "applicationId": [
     {
-      code: '[invalid]applicationId',
-      message: 'The [applicationId] property is not valid. No application exists with Id [076d3078-785e-41b7-8566-1accafa55f11].'
+      "code": "[invalid]applicationId",
+      "message": "The [applicationId] property is not valid. No application exists with Id [076d3078-785e-41b7-8566-1accafa55f11]."
     }
   ]
 }
