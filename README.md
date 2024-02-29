@@ -3,7 +3,8 @@
 ## Run the demo
 
 1. `docker-compose up -d`
-2. `node index.js`
+1. `npm install`
+1. `node index.js`
 
 ## Login user immediately after registration
 
